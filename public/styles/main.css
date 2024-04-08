@@ -1,0 +1,486 @@
+
+
+#title2{
+  font-family: Merriweather,serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: wheat;
+}
+
+#input_ISBN{
+  font-size:16px; 
+  padding-left: 8px; 
+  padding-right: 8px; 
+  padding-top: 12px; 
+  padding-bottom: 12px; 
+  margin-left:10px; 
+  text-align: center; 
+  background-color:#96C0B7; 
+  border: 2px solid #FEF6C9; 
+}
+
+#del{
+  padding:10px 20px; 
+  margin-left: 4em; 
+  margin-bottom: 1em; 
+  font-size: 25px; 
+  font-weight: 600;
+  color:#FEF6C9;
+  background-color:#725752; 
+  border: #96C0B7 3px solid ;
+}
+
+#dateRead{
+  padding-left: 2px; 
+  padding-right: 2px; 
+  padding-top: 8px; 
+  padding-bottom: 8px; 
+  margin-left:10px; 
+  text-align: center; 
+  background-color:#96C0B7; 
+  border: 2px solid #FEF6C9;
+}
+
+.labels_container{
+  font-family: Poppins,sans-serif; 
+  font-weight: 500;
+  border: 10px solid #fff9d5; 
+  border-color: #FEF6C9 #96C0B7 #96C0B7 #FEF6C9;
+  background-color: #725752;
+  margin-left: 2%;
+  margin-right: -18%;
+  margin-bottom: -16%;
+  padding: 0.2em 4em 0.2em 4em;
+  overflow-wrap: break-word;
+  top: 50%;
+  left: 50%;
+  text-align: center 
+
+}
+
+.labels_container_about{
+  font-family: Poppins,sans-serif; 
+  font-weight: 500;
+  border: 10px solid #fff9d5; 
+  border-color: #FEF6C9 #96C0B7 #96C0B7 #FEF6C9;
+  background-color: #725752;
+  margin-left: 2%;
+  margin-right: -18%;
+  margin-bottom: -16%;
+  padding: 0.2em 4em 0.2em 4em;
+  overflow-wrap: break-word;
+  top: 50%;
+  left: 50%;
+  text-align: center 
+}
+
+.labels_container_resources{
+  font-family: Poppins,sans-serif; 
+  font-weight: 500;
+  border: 10px solid #fff9d5; 
+  border-color: #FEF6C9 #96C0B7 #96C0B7 #FEF6C9;
+  background-color: #725752;
+  margin-left: 2%;
+  margin-right: -18%;
+  margin-bottom: -16%;
+  padding: 0;
+  overflow-wrap: break-word;
+  top: 50%;
+  left: 50%;
+  text-align: center 
+
+}
+
+.outerBorder{
+  top: 50%;
+  left: 50%;
+  background-color: #96C0B7;
+  border: 3px solid #96C0B7; 
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 12%;
+  padding: 5%;
+}
+
+.outerBorder2{
+  top: 50%;
+  left: 50%;
+  background-color: #96C0B7;
+  border: 3px solid #96C0B7; 
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 5em;
+  padding: 2.5em;
+}
+
+.outerBorder2_about{
+  top: 50%;
+  left: 50%;
+  background-color: #96C0B7;
+  border: 3px solid #96C0B7; 
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 5em;
+  margin-top: 1.5em; 
+  color:white; 
+  padding: 3.5em;
+}
+
+.outerBorder2_resources{
+  top: 50%;
+  left: 50%;
+  background-color: #96C0B7;
+  border: 3px solid #96C0B7; 
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 5em;
+  margin-top: 1.5em; 
+  color:white;
+  padding: 3em;
+}
+
+
+
+.listOfBooks{
+    border: 10px solid #fff9d5; 
+    border-color: #FEF6C9 #96C0B7 #96C0B7 #FEF6C9;
+    background-color: #725752;
+    margin-left: 2%;
+    margin-right: -18%;
+    margin-bottom: -16%;
+    padding: 10%;
+    overflow-wrap: break-word;
+}
+
+
+.book_heading{
+  font-size: 25px;
+  margin-left: 6.2em;
+  font-family: Merriweather,serif;
+  font-weight: 400;
+  color: #fffef9;
+
+}
+
+.box_book_headings{
+  margin-top: 2.5em;
+}
+
+
+.review{
+  margin-left: 6.5em;
+  color: wheat;
+  text-align: justify;
+  font-family: Poppins,sans-serif; 
+  font-weight: 500;
+}
+
+.sort{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#error{
+  text-align: center;
+  color:#725752;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+
+
+@keyframes vibrate {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-1deg); }
+  20% { transform: rotate(1deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  60% { transform: rotate(0deg); }
+  70% { transform: rotate(-1deg); }
+  80% { transform: rotate(1deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(-1deg); }
+}
+
+img:hover {
+  /* Start the vibrate animation with duration 0.5 seconds */
+  animation: vibrate 1s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+/* CSS */
+.button-52 {
+  font-family: Merriweather,serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #96C0B7;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+
+.nav-link {
+  font-family: Merriweather,serif;
+  position: relative;
+  color: #725752;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #725752;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+
+  left: 0;
+  background-color: #725752;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1);
+}
+
+/*Edit button*/
+
+div.show-image {
+  position: relative;
+  float:left;
+  margin:5px;
+}
+div.show-image:hover img{
+  opacity:0.5;
+}
+div.show-image:hover button {
+  display: block;
+}
+div.show-image button {
+  position:absolute;
+  display:none;
+}
+div.show-image button.btn {
+  bottom: 0;
+  left:0;
+}
+
+
+
+.btn a {
+  padding: 8px 22px;
+  margin-left: 12.5px;
+  text-align: center;
+  color: white;
+  border: solid 1px white;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.container:hover .btn {
+  opacity: 1;
+}
+
+button.btn{
+  --bs-btn-border-color: none;
+  --bs-btn-hover-border-color:none;
+  
+}
+
+
+.circle-sketch-highlight {
+  position: relative;
+  left: 0.5em;
+  font-family: Libre Franklin;
+  font-size: 32px;
+  font-weight: 500;
+}
+.circle-sketch-highlight:before {
+  content: "";
+  z-index: -1;
+  left: -0.5em;
+  top: -0.1em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  position: absolute;
+  border-right-color: transparent;
+  width: 100%;
+  height: 1em;
+  transform: rotate(2deg);
+  opacity: 0.7;
+  border-radius: 50%;
+  padding: 0.1em 0.25em;
+}
+.circle-sketch-highlight:after {
+  content: "";
+  z-index: -1;
+  left: -0.5em;
+  top: 0.1em;
+  padding: 0.1em 0.25em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 1em;
+  transform: rotate(-1deg);
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+
+
+
+@media  (max-width: 500px) {
+
+  
+.book_heading {
+  font-size: 15px;
+  text-align: right;
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  color: #fffef9;
+  }
+  .review {
+    margin-left: 0px;
+    color: wheat;
+    text-align: justify;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+.outerBorder2 {
+  top: 50%;
+  left: 50%;
+  background-color: #96C0B7;
+  border: 3px solid #96C0B7;
+  margin-left: 8%;
+  margin-right: 15%;
+  margin-bottom: 5em;
+  padding: 1.4em;
+}
+
+textarea{
+  resize: both;
+  margin-top: 1em;
+  background-color: #96C0B7;
+  border: 2px solid #FEF6C9;
+  width: 280px;
+}
+
+#title2 {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: wheat;
+}
+#input_ISBN{
+  font-size: 16px;
+  padding-left: 13px;
+  padding-right: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 10px;
+  text-align: center;
+  background-color: #96C0B7;
+  border: 2px solid #FEF6C9;
+}
+
+.labels_container {
+  padding: 0em 0em 0em 0em; 
+
+}
+
+#del{
+  margin-left: 1em;
+}
+
+#dateRead {
+  padding-left: 1px;
+  margin-top: 4px;
+  padding-right: 1px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-left: 10px;
+  text-align: center;
+  background-color: #96C0B7;
+  border: 2px solid #FEF6C9;
+}
+
+
+.outerBorder2_about{
+  margin-left: 1%;
+  margin-right: 12%;
+  margin-bottom: 5em;  
+  margin-top: 1.5em; 
+  padding: 1.0em;
+}
+
+.outerBorder2_resources{
+
+  padding: 0.8em;
+}
+
+.labels_container_about{
+  padding: 0.2em 0.4em 0.2em 0.4em;
+
+}
+
+.labels_container_resources{
+  padding: 0.3em 0.2em 0.3em 0.2em;
+
+}
+
+
+}
+

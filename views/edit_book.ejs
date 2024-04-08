@@ -1,0 +1,52 @@
+<%- include('partials/header.ejs'); -%>
+
+<body style="background-color: #FEF6C9;">
+<div class="centralDiv" style=" display: flex;
+                                justify-content: center;
+                                align-items: center;">
+<div class="outerBorder2" style="margin-top: 6em; color:white">
+<form action="/edit_book?isbn=<%=book_details.isbn%>" method="POST" >
+
+    <div class="labels_container">
+    <p class="animate__animated animate__fadeIn" id="title2">Edit Details of Book</p>
+    <div>
+        <h4 style="display: inline-block;" class="labels">Change Date read :  </h4>
+        <input type="date" id="dateRead" name="updated_dateRead" value=<%= book_details.date_read %> placeholder="YYYY-MM-DD" required>
+    </div>
+    <br>
+    <div>
+        <h4 style="display: inline-block;" class="labels">Change Rating :</h4>
+        <input type="number" min="1" max="10" name="updated_rating" value="<%= book_details.rating %>" placeholder="(1-10)" style="padding-left: 2px; padding-right: 2px; padding-top: 2px; padding-bottom: 2px; margin-left:10px; text-align: center; background-color:#96C0B7; border: 2px solid #FEF6C9;" required>
+    </div>
+    <br>
+    <h4 class="labels">Review of book read : </h4>
+    <textarea id="review" name="updated_review" rows="10" cols="50" style="resize: both; margin-top: 1em; background-color:#96C0B7; border: 2px solid #FEF6C9;" required><%= book_details.review %></textarea>
+    <br>
+
+    <input type="submit" style=" margin-top: 1em; margin-bottom: 1em; font-size: 20px; font-weight: 600; color:#725752; background-color:#FEF6C9; border: #96C0B7 3px solid ;" value="Submit">
+    </div>
+</form>
+
+</div>
+
+</div>
+<form action="/delete_book?isbn=<%=book_details.isbn%>" method="post">
+    <div style=" display: flex;
+    justify-content: center;
+    align-items: center;">
+        <input type="submit" onchange="this.form.submit()" id="del" name="deleteBook" value="Delete">
+    </div>
+   
+</form>
+
+
+<% if (locals.isbn_err){%>
+    <p id="error"><%= isbn_err %></p>
+<%} else if (locals.repeated_entry){%>
+    <p id="error"><%= repeated_entry %></p>
+<%} else if (locals.wrong_isbn){%>
+    <p id="error"><%= wrong_isbn %></p>
+<%} else if (locals.review_err){%>
+    <p id="error"><%= review_err %></p>
+<%}%>
+</body>
