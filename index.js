@@ -1,19 +1,31 @@
+import dotenv from "dotenv";
 import express from "express";
 import bodyParser from "body-parser";
 import axios from "axios";
 import pg from "pg";
 
+dotenv.config();
+const { Pool } = pg;
 const app = express();
 const port = 3000;
 
-const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "books",
-  password: "roastedbeans",
-  port: 5432,
+
+const db = new Pool({
+    connectionString: process.env.DBConfigLink,
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 db.connect();
+
+//const db = new pg.Client({
+//  user: "postgres",
+//  host: "localhost",
+//  database: "books",
+ // password: "roastedbeans",
+//  port: 5432,
+//});
+//db.connect();
 
 const API_URL = "https://www.googleapis.com/books/v1/volumes?q=isbn:";
 
