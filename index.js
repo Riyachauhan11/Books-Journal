@@ -18,15 +18,6 @@ const db = new Pool({
 });
 db.connect();
 
-//const db = new pg.Client({
-//  user: "postgres",
-//  host: "localhost",
-//  database: "books",
- // password: "roastedbeans",
-//  port: 5432,
-//});
-//db.connect();
-
 const API_URL = "https://www.googleapis.com/books/v1/volumes?q=isbn:";
 
 app.use(bodyParser.urlencoded({ extended: true }));
