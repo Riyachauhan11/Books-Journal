@@ -8,17 +8,8 @@ import axios from "axios";
 import pg from "pg";
 
 dotenv.config();
-const { Pool } = pg;
 const app = express();
 const port = 3000;
-
-//const db = new Pool({
-//    connectionString: process.env.DBConfigLink,
-//    ssl: {
-//        rejectUnauthorized: false
-//    }
-//});
-//db.connect();
 
 const db = new pg.Client({
   user: process.env.PG_USER,
