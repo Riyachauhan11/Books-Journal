@@ -1,6 +1,26 @@
 <%- include('partials/header.ejs'); -%>
 
 <body style="background-color: #FEF6C9;">
+    <% if (user) { %>
+      <div class="d-flex justify-content-end pe-5 pt-4">
+      <a href="/logout" style="text-decoration: none;">
+        <button class="btn rounded-pill px-4 py-2 shadow-sm"
+                style="background-color: #5F4B32; color: white; font-weight: 700; border: none;">
+          Sign out
+        </button>
+      </div>
+      </a>
+    <% } else { %>
+      <div class="d-flex justify-content-end pe-5 pt-4">
+      <a href="/auth/google" style="text-decoration: none;">
+        <button class="btn rounded-pill px-4 py-2 shadow-sm"
+                style="background-color: #5F4B32; color: white; font-weight: 700; border: none;">
+          Sign in
+        </button>
+      </a>
+    </div>
+    <% } %>
+  
     <div class="px-4 py-5 text-center">
         <img class="d-block mx-auto mb-4" src="/assets/journal-bookmark-fill.svg" alt="" width="72" height="57">
         <h1 class="display-5 fw-bold text-body-emphasis mb-4" style="font-family: Merriweather,serif">Your Library of Books</h1>
@@ -8,8 +28,8 @@
           <p class="lead mb-4" style="font-family: Poppins,sans-serif; font-weight: 500; text-align: center;">
             Welcome to our platform designed to help you track and<br> 
             maintain a list of books you've read. Rate each book, mark<br> 
-            when you completed them, and leave detailed reviews. Know<br> 
-            more about the website from its about page present at bottom.</p>
+            when you complete them, and leave detailed reviews.<br> 
+            To add a new book, please sign in.</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <button class="button-52" role="button" onclick="window.location.href='/add_new_book'">Add new Book</button>
           </div>
